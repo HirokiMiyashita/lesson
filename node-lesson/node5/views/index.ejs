@@ -1,0 +1,179 @@
+<%- include ('partials/header'); %>
+    <main>
+        <article>
+            <section>
+                <h3>
+                    ユーザ登録
+                </h3>
+                <ul>
+                    <li>name:<input type="text" name="name_get"></li>
+                    <li>val1:<input type="text" name="val1_get"></li>
+                    <li>val2:<input type="text" name="val2_get"></li>
+                </ul>
+                <button type="submit" id="form_get">登録しよう</button>
+            </section>
+
+            <section>
+                <h3>ユーザー情報取得</h3>
+                <ul>
+                    <li>name：<input type="text" name="name" id="name"><button id="name_button">送信</button></li>
+                    <li>ソート：<select name="sort" id="sort">
+                    <option value="1">昇順</option>
+                    <option value="-1">降順</option>                    
+                </select></li>
+                    <li>取得件数：<select name="number" id="number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></li>
+                    <li>オフセット：<select name="offset" id="offset">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select></li>
+                </ul>
+                <p>・検索値出力</p>
+                <ul id="output">
+                    <% for (var i=0 ; i < value.length; i++){ %>
+                        <li>name:
+                            <%= value[i].name %>　val1:
+                                <%= value[i].val1 %>　val2:
+                                    <%= value[i].val2 %>
+                        </li>
+                        <% } %>
+                </ul>
+            </section>
+            <section>
+                <h3>■ユーザ削除</h3>
+                <p>name:<input type="text" name="delete" id="delete"><input type="submit" id="form" value="削除"></p>
+            </section>
+            <section>
+                <p>■ユーザ更新</p>
+                <p>name:<input type="text" id="searchform"></p>
+                <p>更新検索：<input type="button" name="searchUpdate" id="searchUpdate" value="更新"></p>
+                <p>name:<input type="text" id="searchName" value="">　val1:<input type="text" id="searchVal1" value="">　val2<input type="text" id="searchVal2" value="">　サインアップ<input type="text" id="searchSignup" value=""></p>
+
+                <p><button id="update">ユーザ更新</button></p>
+            </section>
+        </article>
+    </main>
+    <script>
+        const send = document.getElementById('form_get');
+        const nameButton = document.getElementById('name_button');
+        const form = document.getElementById('form');
+        const update = document.getElementById('update');
+        const searchUpdate = document.getElementById('searchUpdate');
+        send.addEventListener('click', function() {
+            console.log("hello");
+            var send_data = {
+                name: $('input[name="name_get"]').val(),
+                val1: $('input[name="val1_get"]').val(),
+                val2: $('input[name="val2_get"]').val(),
+            };
+            $.ajax({
+                url: "/users",
+                type: "POST",
+                data: send_data
+            }).done(function(data, status, xhr) {
+                $('#output').empty();
+                console.log(data);
+                for (var item = 0; item < data.length; item++) {
+                    $("#output").append('<li>name:' + data[item].name + "　" + "val1:" + data[item].val1 + "　" + "val2:" + data[item].val2 + '</li>');
+                }
+            })
+        })
+        nameButton.addEventListener('click', function() {
+            if (document.getElementById('name').value == "") {
+                const data = {
+                    sort: Number(document.getElementById('sort').value),
+                    number: Number(document.getElementById('number').value),
+                    offset: Number(document.getElementById('offset').value)
+                }
+                console.log(data);
+                $.ajax({
+                    url: '/users',
+                    data: data,
+                    type: "GET",
+                }).done(function(data, status, xhr) {
+                    $('#output').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        $("#output").append('<li>name:' + data[i].name + "　" + "val1:" + data[i].val1 + "　" + "val2:" + data[i].val2 + '</li>');
+                    }
+                })
+            } else {
+                const url = "/users/" + document.getElementById('name').value;
+                console.log(url);
+                $.ajax({
+                    url: url,
+                    type: "GET",
+                }).done(function(data, status, xhr) {
+                    $('#output').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        $("#output").append('<li>name:' + data[i].name + "　" + "val1:" + data[i].val1 + "　" + "val2:" + data[i].val2 + '</li>');
+                    }
+                })
+            }
+        })
+
+        form.addEventListener('click', function() {
+            let data = {
+                delete: document.getElementById('delete').value
+            }
+            $.ajax({
+                url: "/delete",
+                data: data,
+                type: "POST",
+            }).done(function(data, status, xhr) {
+                $('#output').empty();
+                for (var i = 0; i < data.length; i++) {
+                    $("#output").append('<li>name:' + data[i].name + "　" + "val1:" + data[i].val1 + "　" + "val2:" + data[i].val2 + '</li>');
+                }
+            })
+        })
+        searchUpdate.addEventListener('click', function() {
+            let searchform = {
+                name: document.getElementById('searchform').value
+            }
+            $.ajax({
+                url: "/search",
+                data: searchform,
+                type: "GET",
+            }).done(function(data, status, xhr) {
+                $('#output').empty();
+                console.log(data);
+                document.getElementById('searchName').value = data[0].name;
+                document.getElementById('searchVal1').value = data[0].val1;
+                document.getElementById('searchVal2').value = data[0].val2;
+                document.getElementById('searchSignup').value = data[0].signup
+            })
+        })
+        update.addEventListener('click', function() {
+            let data = {
+                name: document.getElementById('searchName').value,
+                val1: document.getElementById('searchVal1').value,
+                val2: document.getElementById('searchVal2').value,
+                signup: document.getElementById('searchSignup').value
+            }
+            $.ajax({
+                url: "/search",
+                data: data,
+                type: "PUT",
+            }).done(function(data, status, xhr) {
+                $('#output').empty();
+                $('#searchform').empty();
+                $('#searchName').empty();
+                $('#searchVal1').empty();
+                $('#searchVal2').empty();
+                $('#searchSignup').empty();
+                for (var i = 0; i < data.length; i++) {
+                    $("#output").append('<li>name:' + data[i].name + "　" + "val1:" + data[i].val1 + "　" + "val2:" + data[i].val2 + '</li>');
+                }
+            })
+        })
+    </script>

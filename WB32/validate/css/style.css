@@ -1,0 +1,14 @@
+#firstname-error,
+#mailaddres-error,
+#zip-error,
+#pref-error,
+#city-error,
+#secondname-error,
+#submailaddres-error,
+#pass-error,
+#subpass-error,
+#multiSelectSample1-error,
+#CheckboxGroup1-error,
+#subcity-error {
+    color: red;
+}

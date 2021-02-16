@@ -1,0 +1,4 @@
+パス通っていないとき
+export PATH=$PATH:`npm bin -g`
+Firebaseに指定デプロイする方法
+Firebase deploy --only firestore:rules

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>LINE</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/common.css">
+</head>
+
+<body>
+    <div class="line">
+        <div id="room" class="line-header">{{.Name}}</div>
+        <div id="chat" class="line-container"></div>
+        <div class="line-form" name="line_form">
+            <input id="text" type="text" onchange="chenge()" name="text">
+            <button class="line-form-button" onclick="send_data()" onclick="click()">Send</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+    <script>
+        function chenge() {
+            const text = document.getElementById("text").value;
+            console.log(text);
+        }
+    </script>
+
+</body>
+
+</html>

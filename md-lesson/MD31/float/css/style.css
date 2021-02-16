@@ -1,0 +1,32 @@
+nav {
+    width: 100%;
+    background: #000;
+}
+
+ul {
+    display: flow-root;
+    list-style-type: none;
+    border: solid red 1px;
+}
+
+li {
+    float: left;
+    text-align: center;
+    font-size: 16px;
+}
+
+li a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 25px 20px 25px;
+    color: #FFF;
+}
+
+li a:hover {
+    background: tomato;
+}
+
+main {
+    text-align: center;
+    clear: left;
+}

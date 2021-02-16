@@ -1,0 +1,50 @@
+.photo {
+    width: 530px;
+    height: 363px;
+    background-repeat: no-repeat;
+    background-image: url(../img/areatop_course_it-web.png);
+    border: solid red 1px;
+}
+
+section {
+    width: 530px;
+    padding-top: 363px;
+    background-image: url(../img/areatop_course_it-web.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.oi {
+    width: 435px;
+    height: 98px;
+    border: solid red 1px;
+}
+
+div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    background: #333;
+}
+
+.arrow {
+    background: #000;
+    padding: 0;
+    height: 98px;
+    flex: 95px;
+    background-image: url(../img/common_arrow13.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div>p {
+    color: #fff;
+    font-size: 12px;
+    flex: 435px;
+    line-height: 160%;
+    padding: 5%;
+}
+
+.none {
+    display: none;
+}

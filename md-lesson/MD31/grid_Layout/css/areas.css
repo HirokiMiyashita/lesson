@@ -1,0 +1,4 @@
+#wrapper {
+    display: grid;
+    grid-template: "box1 box2 box3 "
+}

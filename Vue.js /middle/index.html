@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="app">
+        <like-component message="Awesome"></like-component>
+        <like-component message="what@som"></like-component>
+        <like-component></like-component>
+    </div>
+    <script>
+        //component
+        //いいねボタン（countUp）
+        var likeComponent = Vue.extend({
+            //props: ['message']
+            //型の定義、messageのdefault値
+            props: {
+                message: {
+                    type: String,
+                    default: 'oh my god'
+                }
+            },
+            //componentの処理は関数として渡していかなければならない
+
+            data: function() {
+                return {
+                    count: 0
+                }
+            },
+            template: '<button @click="countUp">{{ message }} {{ count }}</button>',
+            methods: {
+                //countUpに対しての処理
+
+                countUp: function() {
+                    this.count++;
+                }
+            }
+        });
+
+        var app = new Vue({
+            el: '#app',
+            components: {
+                'like-component': likeComponent
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+@media (max-width:375px) {
+    .hidden_pc {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .none_pc {
+        display: none;
+    }
+    #wrapper {
+        width: 100%;
+    }
+    .none_iphone {
+        display: none;
+    }
+    .none {
+        display: none;
+    }
+    /* header */
+    /* nav */
+    header {
+        width: 100%;
+        background-image: url(../../img/family3.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+        padding-bottom: 11em;
+        margin: 0 auto;
+    }
+    #header_title {
+        margin-top: 7em;
+        color: #ffffff;
+    }
+    #hanber_menu {
+        border-radius: 10px 10px 10px 10px;
+        width: 100%;
+        height: 3em;
+        padding-top: 1em;
+        margin-right: 1em;
+    }
+    #facebook {
+        width: 100%;
+        height: 3em;
+        padding-top: 1em;
+        margin-right: 1em;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(../../img/header_s_wave.png);
+        padding-bottom: 3.46em;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    nav h2 {
+        width: 50%;
+        height: 3em;
+        padding-top: 1em;
+        padding-left: 1em;
+        color: #0E9F63;
+        text-align: center;
+    }
+    .big_font {
+        font-size: 1.8em
+    }
+    #nav_iphone {
+        display: flex;
+    }
+    #family_wave {
+        text-align: right;
+        margin-top: -3em;
+        padding-top: 2.3em;
+        background-image: url(../../img/bg_s_wave.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 1.5em;
+        padding-right: 1em;
+    }
+    #family {
+        margin-top: 1em;
+    }
+    #family_banner {
+        background-image: url(../../img/family_baner.png);
+        padding-top: 2em;
+        margin-top: 1em;
+        background-repeat: no-repeat;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+    }
+    #visit {
+        background-image: url(../../img/アセット-7.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 13em;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+    }
+    #visit h4 {
+        text-align: center;
+        font-size: 1.5em;
+        border-bottom: 1px #009A5A solid;
+    }
+    #visit p {
+        margin-top: 2em;
+        border: solid black 1px;
+        padding: 1em;
+        border-radius: 20px;
+        line-height: 1.75em;
+    }
+    #s_visit {
+        margin-top: 1em;
+        background-image: url(../../img/アセット-13.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 16em;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+    }
+    #s_visit h4 {
+        text-align: center;
+        font-size: 1.5em;
+        border-bottom: 1px #009A5A solid;
+    }
+    #s_visit p {
+        margin-top: 2em;
+        border: solid black 1px;
+        padding: 1em;
+        border-radius: 20px;
+        line-height: 1.75em;
+    }
+    #link_visit {
+        text-align: center;
+        margin-top: 2em;
+        border: solid #009A5A 1px;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        border-radius: 20px;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        color: #009A5A;
+    }
+    #background {
+        background-image: url(../../img/アセット-8.png);
+        padding-top: 10em;
+        background-repeat: no-repeat;
+    }
+    #service h3 {
+        background-image: url(../../img/service.png);
+        padding-top: 2em;
+        margin-top: 1em;
+        background-repeat: no-repeat;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+    }
+    #service p {
+        margin-top: 5em;
+        border: solid black 1px;
+        padding: 1em;
+        border-radius: 20px;
+        line-height: 1.75em;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+    }
+    #call h3 {
+        text-align: center;
+        margin-top: 2em;
+        font-size: 1.5em;
+        border-bottom: #009A5A solid 1px;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+    }
+    #call dt {
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        margin-top: 1em;
+        padding-top: 13em;
+        background-position: center;
+        background-image: url(../../img/アセット-9.png);
+        background-repeat: no-repeat;
+    }
+    #call dt {
+        text-align: center;
+    }
+    #call dd {
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        border: solid black 1px;
+        margin-top: 2em;
+        padding: 1em;
+        line-height: 1.75em;
+        border-radius: 20px;
+    }
+    #call p:nth-of-type(1) {
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        text-align: center;
+        padding-top: 1em;
+        color: #009A5A;
+        border-bottom: solid #009A5A 1px;
+    }
+    #call p:nth-of-type(2) {
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        line-height: 1.75em;
+        padding: 1em;
+        margin-top: 1em;
+        border-radius: 20px;
+        border: solid black 1px;
+    }
+    #call p:nth-of-type(3) {
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        border: solid black 1px;
+        margin-top: 2em;
+        padding: 1em;
+        line-height: 1.75em;
+        border-radius: 20px;
+    }
+    #syougai_kids h3 {
+        background-image: url(../../img/syougai_kids_iphone.png);
+        padding-top: 2em;
+        margin-top: 2em;
+        margin-bottom: 3em;
+        background-repeat: no-repeat;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+    }
+    #syougai_kids p {
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        line-height: 1.75em;
+        padding: 1em;
+        margin-top: 1em;
+        border-radius: 20px;
+        border: solid black 1px;
+    }
+    #messege {
+        background-image: url(../../img/doer.png);
+        margin-top: 2em;
+        border: #FFFFFF solid 1px;
+    }
+    #messege_contact {
+        width: 90%;
+        padding-top: 1em;
+        padding-bottom: 3em;
+        background-color: #FFFFFF;
+        margin-left: 1.375em;
+        margin-right: 1.375em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        opacity: 0.8;
+    }
+    #messege_contact h3 {
+        font-size: 1.8em;
+        border-bottom: solid 1px #0E9F63;
+        padding-top: 0.8em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #messege_p {
+        padding-top: 1em;
+        padding-left: 1.725em;
+        padding-right: 1.725em;
+        line-height: 1.75em;
+        font-size: 0.8em;
+    }
+    #phone {
+        border: solid #4EAC25 1px;
+        margin-top: 1em;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em;
+    }
+    .phone_number {
+        color: #4EAC25;
+        font-size: 2em;
+    }
+    #mail {
+        border: solid #0E9F63 1px;
+        text-align: center;
+        margin-top: 1em;
+        border-radius: 10px;
+        color: #FFFFFF;
+        background-color: #0E9F63;
+    }
+    /* main */
+    /* footer */
+    footer {
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 2em;
+        border-top: solid 1px #0E9F63;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        line-height: 1.75em;
+    }
+    /* footer */
+}
+
+@media (min-width:800px) {
+    #wrapper {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .hidden_iphone {
+        display: none;
+    }
+    .hidden_pc {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #FFFFFF;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        margin: 0.5em;
+        line-height: 3em;
+    }
+    nav h2 {
+        margin-right: 3em;
+        margin-top: 1em;
+        padding-bottom: 1em;
+    }
+    .big_title {
+        font-size: 1em;
+        color: #009A5A;
+    }
+    .big_font {
+        font-size: 1.5em;
+        color: #009A5A;
+    }
+    header {
+        background-image: url(../../img/family3.png);
+        background-repeat: no-repeat;
+        padding-bottom: 10em;
+        background-position: right 10% top 40%;
+    }
+    #header_title {
+        margin-top: 5em;
+        margin-left: 1em;
+        font-size: 2em;
+        width: 13em;
+        background-color: #009A5A;
+        color: #FFFFFF;
+        font-family: 'Noto Serif JP', serif;
+        padding: 1em 1em 1em 1em;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+    }
+    #font_size {
+        font-size: 0.4em;
+    }
+    #family_banner {
+        background-image: url(../../img/family_logo.png);
+        padding-top: 2em;
+        background-repeat: no-repeat;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+    #family_wave {
+        display: none;
+    }
+    #visit_gluop {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+    }
+    #visit {
+        background-image: url(../../img/visit.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-top: 10em;
+        width: 130em;
+        margin-top: 2em;
+    }
+    #s_visit {
+        margin-left: 3em;
+        background-image: url(../../img/suport.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-top: 10em;
+        width: 130em;
+        margin-top: 2em;
+    }
+    #visit h4 {
+        text-align: center;
+        color: #009A5A;
+    }
+    #visit p {
+        border: solid #009A5A 1px;
+        margin-top: 2em;
+        padding: 1em;
+        border-radius: 10px;
+        line-height: 1.7em;
+    }
+    #s_visit h4 {
+        text-align: center;
+        color: #009A5A;
+    }
+    #s_visit p {
+        border: solid #009A5A 1px;
+        margin-top: 2em;
+        padding: 1em;
+        border-radius: 10px;
+        line-height: 1.7em;
+    }
+    #service h3 {
+        background-image: url(../../img/syougai_family.png);
+        padding-top: 2em;
+        background-repeat: no-repeat;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+    #service p:nth-of-type(1) {
+        margin-left: 2em;
+        margin-top: 2em;
+        padding: 2em;
+        border: solid #009A5A 1px;
+        height: 8em;
+        border-radius: 10px;
+    }
+    #background {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    #call h3 {
+        background-image: url(../../img/call.png);
+        background-repeat: no-repeat;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3em;
+        padding-top: 2em;
+    }
+    #call dl {
+        display: flex;
+        margin: 0 auto;
+        background-image: url(../../img/アセット-9.png);
+        background-repeat: no-repeat;
+        background-position: top 0em left -1em;
+        border: solid #009A5A 1px;
+        margin-top: 3em;
+        border-radius: 10px;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    #call dd {
+        padding: 3em;
+        line-height: 1.7em;
+        width: 60%;
+    }
+    #call dt {
+        width: 40%;
+        text-align: center;
+        padding-top: 13em;
+        padding-bottom: 1em;
+        background-repeat: no-repeat;
+    }
+    #call p:nth-of-type(1) {
+        font-size: 2em;
+        color: #009A5A;
+        border-bottom: 1px #009A5A solid;
+        width: 19em;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    #call img {
+        width: 70%;
+        margin-left: 11em;
+    }
+    #syougai_kids h3 {
+        background-image: url(../../img/syougai_kids.png);
+        background-repeat: no-repeat;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3em;
+        padding-top: 2em;
+    }
+    #syougai_kids p {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2em;
+        border: solid #009A5A 1px;
+        padding: 2em;
+        line-height: 1.7em;
+        border-radius: 10px;
+        line-height: 2em;
+    }
+    #messege {
+        background-image: url(../../img/1442299_m.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 2em;
+        border: solid #009A5A 1px;
+        margin-top: 2em;
+    }
+    #messege_contact {
+        width: 90%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-color: #FFFFFF;
+        margin-left: 1.375em;
+        opacity: 0.8;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+    #messege_contact h3 {
+        font-size: 1.8em;
+        border-bottom: solid 1px #0E9F63;
+        padding-top: 0.8em;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    #center {
+        text-align: center;
+        margin-top: 3em;
+    }
+    #messege_p {
+        padding-top: 1em;
+        padding-left: 1.725em;
+    }
+    #phone {
+        border: solid #4EAC25 1px;
+        margin-top: 5em;
+        text-align: center;
+        border-radius: 10px;
+        padding: 1em;
+        width: 100%;
+    }
+    .phone_number {
+        color: #4EAC25;
+        font-size: 2em;
+    }
+    #syougai_kids p {
+        border: solid #4EAC25 1px;
+    }
+    #call p:nth-of-type(3) {
+        border: solid #4EAC25 1px;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3em;
+        padding-top: 2em;
+        line-height: 2em;
+        padding: 1em;
+        border-radius: 10px 10px 10px 10px;
+    }
+    #mail {
+        border: solid #0E9F63 1px;
+        text-align: center;
+        width: 100%;
+        margin-top: 5em;
+        border-radius: 10px;
+        color: #FFFFFF;
+        background-color: #0E9F63;
+        padding-top: 2em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    #messege_flex {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    /* main */
+    /* footer */
+    footer {
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 2em;
+        border-top: solid 1px #0E9F63;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    #link_visit {
+        border: #0E9F63 1px solid;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 3em;
+        text-align: center;
+        padding: 1em;
+        border-radius: 40px;
+        color: #0E9F63;
+    }
+    /* footer */
+}

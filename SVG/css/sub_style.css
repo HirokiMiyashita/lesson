@@ -1,0 +1,120 @@
+/*
+#top {
+    width: 100vw;
+    height: 10vh;
+    background-image: url(../image/tan-beautiful-face-model-beautiful-girl-girl.jpg);
+    background-size: cover;
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+@media (max-width: 1000px / min-width:671 px) {
+    .a {
+        padding: 30%;
+    }
+}
+
+#back {
+    /* 画像ファイルの指定 */
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/tan-beautiful-face-model-beautiful-girl-girl.jpg);
+
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    background-color: #464646;
+
+}
+
+#back::before {
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 自由に位置指定 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+}
+
+
+.style2 {
+    color: #FFFFFF;
+    margin-left: 4%;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    padding-top: 2%;
+}
+
+.style3 {
+    color: #FFFFFF;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 30%;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 3;
+}
+
+content {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    max-width: 60%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+    z-index: 3;
+}
+
+ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul a:hover {
+    color: gray;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 8%;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+
+}
+
+h1 {
+    position: relative;
+    z-index: 3;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}

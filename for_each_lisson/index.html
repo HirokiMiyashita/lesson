@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+	<div id="boxes">
+		<div class="box1">
+			fghj
+		</div>
+		<div class="box1">
+			fgh
+		</div>
+		<div class="box1">
+			ghj
+		</div>
+		<div class="box1">
+			ghj
+		</div>
+	</div>
+
+	<div id="boxes2">
+		<div class="box2">
+			fghj
+		</div>
+		<div class="box2">
+			fgh
+		</div>
+		<div class="box2">
+			ghj
+		</div>
+		<div class="box2">
+			ghj
+		</div>
+	</div>
+	<script>
+		$(".box1").click(function(){
+			if ($(this).hasClass('clickOn')) {
+				$(this).removeClass('clickOn');
+			}else{
+				$(this).addClass('clickOn');
+			}
+		});
+
+		var arr = ["#000","#333","#555","#888"];
+		$.each(arr,function(i,val){
+			i = i+1;
+			h = $('.box2').height() + i*20 -20;
+			$('.box2:nth-child('+i+')').css({'backgroundColor':val,'height':h});
+		});
+	</script>
+
+
+	<!-- <script type="text/javascript" src="js/function.js"></script> -->
+</body>
+</html>

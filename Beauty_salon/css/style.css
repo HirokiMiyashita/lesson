@@ -1,0 +1,233 @@
+@charset"UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    width: 1300px;
+    height: 40px;
+    padding-top: 1em;
+    margin: auto;
+    font-family: 'Slabo 27px', serif;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 6em;
+    font-size: 1.3em;
+}
+
+.box1,
+.box3,
+.box5,
+.box7 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.box2,
+.box6,
+.box8 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 9;
+    background-color: #FFFFFF;
+}
+
+.box4 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 9;
+    background-color: #FFFFFF;
+}
+
+.box1 {
+    width: 95%;
+    height: 100vh;
+    background-image: url(../images/new_img2.jpg);
+    margin: auto;
+}
+
+.box3 {
+    width: 95%;
+    height: 100vh;
+    background-image: url(../images/new_img3.jpg);
+    margin: auto;
+}
+
+.box5 {
+    width: 95%;
+    height: 100vh;
+    background-image: url(../images/salon01.jpg);
+    margin: auto;
+}
+
+.box7 {
+    width: 95%;
+    height: 100vh;
+    background-image: url(../images/bg_5.jpg);
+    margin: auto;
+}
+
+.box2 h2 {
+
+    font-size: 3em;
+    width: 230px;
+    margin: auto;
+    margin-top: 4em;
+}
+
+.box2 p:nth-of-type(1) {
+    width: 600px;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.box2 p:nth-of-type(2) {
+    width: 648px;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.box4 h2 {
+    font-size: 3em;
+    width: 170px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.box4 table {
+    width: 800px;
+    margin: auto;
+    margin-top: 3em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: solid 2px white;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table th {
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table th:after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -10px;
+    border-left: 10px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+table td {
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+}
+
+.box6 h2 {
+    font-size: 3em;
+    width: 170px;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.box6 ul {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.box6 li {
+    padding-left: 1em;
+    list-style-type: none;
+}
+
+.box6 li:nth-of-type(1) {
+    padding-top: 5em;
+}
+
+.box6 li:nth-of-type(3) {
+    padding-top: 5.5em;
+}
+
+.box6 li:nth-of-type(4) {
+    padding-top: 2em;
+}
+
+.box6 li:hover {
+    opacity: 30%;
+}
+
+.btn {
+    width: 200px;
+    margin: auto;
+    padding-top: 4em;
+}
+
+.box8_font {
+    width: 350px;
+    margin: auto;
+    padding-top: 2em;
+}
+
+.sub_box8 {
+    display: flex;
+}
+
+iframe {
+    padding-left: 4em;
+    padding-top: 5em;
+    float: left;
+    overflow: hidden;
+}
+
+.box8 ul {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+
+.box8 li {
+    list-style-type: none;
+    font-size: 3em;
+}

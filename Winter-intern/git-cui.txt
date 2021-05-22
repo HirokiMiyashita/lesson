@@ -1,0 +1,35 @@
+-Git command-
+
+現在のブランチの確認
+git branch  
+
+ブランチを作成しブランチを切り替える
+git checkout -b sub1
+
+Gitのリモートリポジトリー上にファイルを使加する
+git add ＊
+
+リモートリポジトリーにコミットする（-mの先はコミットするときのコメント内容）
+git commit -m "add file goodmorning"
+
+自分のブランチにmainにpullリクエストを送る
+git push origin sub1
+
+リモートリポジトリーに上げる際にnode_modulesのあげない設定
+\root直下に\
+touch .gitignore
+
+.gitignoreのファイル内に
+# ディレクトリを指定する場合
+node_modules/
+
+# ファイルのパターン一致でコンパイルなどで生成したファイルを指定する場合
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+記入する
+git addで確認する
+ 
